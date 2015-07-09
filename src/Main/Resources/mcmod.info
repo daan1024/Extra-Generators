@@ -1,0 +1,21 @@
+[
+{
+  "modid": "ExtraGenerators",
+  "name": "Extra-Generators",
+  "description": "A mod that adds even more generators",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "daan1024"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
