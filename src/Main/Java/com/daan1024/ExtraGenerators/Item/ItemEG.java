@@ -1,5 +1,6 @@
 package com.daan1024.ExtraGenerators.Item;
 
+import com.daan1024.ExtraGenerators.CreativeTab.creativeTabEG;
 import com.daan1024.ExtraGenerators.reference.reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemEG extends Item
     public ItemEG()
     {
         super();
+        this.setCreativeTab(creativeTabEG.EG_TAB);
     }
 
     @Override
@@ -28,10 +30,10 @@ public class ItemEG extends Item
 
     @Override
     @SideOnly(Side.CLIENT)
-      public void registerIcons(IIconRegister iconRegister)
-{
-    itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
-}
+    public void registerIcons(IIconRegister iconRegister)
+    {
+        itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+    }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
